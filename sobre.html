@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>sobre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#sobre {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#reserva {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#contatos {
+  top: 140px;
+  background-color: #f44336;
+}
+
+
+</style>
 </head>
 <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="sobre.html" id="sobre">Sobre</a>
+  <a href="#" id="reserva">Reserva</a>
+  <a href="#" id="contatos">Contatos</a>
 
 <h1>Sobre o nosso site</h1>
 <p>Este é um site de reserva para o restaurante.</p>
