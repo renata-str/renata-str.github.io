@@ -1,40 +1,37 @@
-<form id="regForm" action="feito.html">
+<form id="regForm" action="feito.html" method="GET">
+  <h1>Register:</h1>
 
-<h1>Register:</h1>
-
-<div class="tab">Name:
-  <p><input placeholder="Primeiro Nome" oninput="this.className = ''"></p>
-  <p><input placeholder="Sobreno" oninput="this.className = ''"></p>
-</div>
-
-<div class="tab">Contact Info:
-  <p><input placeholder="E-mail" oninput="this.className = ''"></p>
-  <p><input placeholder="Telefone" oninput="this.className = ''"></p>
-</div>
-
-<div class="tab">data da rerva:
-  <p><input placeholder="dia" oninput="this.className = ''"></p>
-  <p><input placeholder="mês" oninput="this.className = ''"></p>
-  <p><input placeholder="horário" oninput="this.className = ''"></p>
-</div>
-
-<div class="tab">Login Info:
-  <p><input placeholder="Nome de usuário" oninput="this.className = ''"></p>
-  <p><input placeholder="Senha" oninput="this.className = ''"></p>
-</div>
-
-<div style="overflow:auto;">
-  <div style="float:right;">
-    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)" url= "feito.html" >Next</button>
+  <div class="tab">Name:
+    <p><input placeholder="Primeiro Nome" name="firstName"></p>
+    <p><input placeholder="Sobrenome" name="lastName"></p>
   </div>
-</div>
 
-<div style="text-align:center;margin-top:40px;">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail" name="email"></p>
+    <p><input placeholder="Telefone" name="phone"></p>
+  </div>
 
+  <div class="tab">Data da reserva:
+    <p><input placeholder="Dia" name="day"></p>
+    <p><input placeholder="Mês" name="month"></p>
+    <p><input placeholder="Horário" name="time"></p>
+  </div>
+
+  <div class="tab">Login Info:
+    <p><input placeholder="Nome de usuário" name="username"></p>
+    <p><input placeholder="Senha" type="password" name="password"></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="submit" id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
 </form>
